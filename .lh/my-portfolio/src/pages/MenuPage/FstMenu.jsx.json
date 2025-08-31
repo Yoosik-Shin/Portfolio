@@ -1,0 +1,122 @@
+{
+    "sourceFile": "my-portfolio/src/pages/MenuPage/FstMenu.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1756652703696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756652718854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div>\r\n+      <div className='flex'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1756652729809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div className='flex'>\r\n+      <div className='flex gap-5'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1756652739673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import React from 'react'\r\n+\r\n+export const FstMenu = () => {\r\n+  return(\r\n+    <>\r\n+      <h1>1thMenu</h1>\r\n+      <div className='flex gap-5 m-7'>\r\n+        <div>\r\n+          <img src=\"\" alt=\"이력서사진\" />\r\n+        </div>\r\n+        <div>\r\n+          <h1>한마디</h1>\r\n+          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n+          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n+          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n+        </div>\r\n+      </div>\r\n+    </>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756652746163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div className='flex gap-5 m-7'>\r\n+      <div className='flex gap-5 p-6'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n@@ -16,25 +16,5 @@\n         </div>\r\n       </div>\r\n     </>\r\n   )\r\n-}\n-import React from 'react'\r\n-\r\n-export const FstMenu = () => {\r\n-  return(\r\n-    <>\r\n-      <h1>1thMenu</h1>\r\n-      <div className='flex gap-5'>\r\n-        <div>\r\n-          <img src=\"\" alt=\"이력서사진\" />\r\n-        </div>\r\n-        <div>\r\n-          <h1>한마디</h1>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n-        </div>\r\n-      </div>\r\n-    </>\r\n-  )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756652769621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div className='flex gap-5 p-6'>\r\n+      <div className='flex gap-6'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1756652779277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div className='flex gap-6'>\r\n+      <div className='flex gap-24'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1756652792591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n           <h1>한마디</h1>\r\n+          <p>안녕하세요. 개발자 신유식 입니다.</p>\r\n           <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n           <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n         </div>\r\n       </div>\r\n     </>\r\n   )\r\n"
+                },
+                {
+                    "date": 1756652845522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n-          <h1>한마디</h1>\r\n-          <p>안녕하세요. 개발자 신유식 입니다.</p>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n-          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n+          <h1>포기하지 않는 개발자 신유식 입니다.</h1>\r\n+          <p>성실하게</p>\r\n+          <p>포기하지 않고</p>\r\n+          <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n     </>\r\n   )\r\n"
+                },
+                {
+                    "date": 1756652903636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div className='flex gap-24'>\r\n+      <div id='photo-container' className='flex gap-24'>\r\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n@@ -14,7 +14,10 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n+      <div>\r\n+        <h2>Skills</h2>\r\n+      </div>\r\n     </>\r\n   )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756652914164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,11 @@\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n       <div>\r\n+        <h2>Profile</h2>\r\n+      </div>\r\n+      <div>\r\n         <h2>Skills</h2>\r\n       </div>\r\n     </>\r\n   )\r\n"
+                },
+                {
+                    "date": 1756653052349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,16 @@\n         </div>\r\n       </div>\r\n       <div>\r\n         <h2>Profile</h2>\r\n+        <div>\r\n+          <ul>\r\n+            <li>학력</li>\r\n+            <ul>\r\n+              <li>국립 공주대학교 산업시스템공학과 졸업 </li>\r\n+            </ul>\r\n+          </ul>\r\n+        </div>\r\n       </div>\r\n       <div>\r\n         <h2>Skills</h2>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1756653095182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <div>\r\n           <img src=\"\" alt=\"이력서사진\" />\r\n         </div>\r\n         <div>\r\n-          <h1>포기하지 않는 개발자 신유식 입니다.</h1>\r\n+          <h1>개발자 신유식 입니다.</h1>\r\n           <p>성실하게</p>\r\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1756653161846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <div>\r\n           <ul>\r\n             <li>학력</li>\r\n             <ul>\r\n-              <li>국립 공주대학교 산업시스템공학과 졸업 </li>\r\n+              <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n             </ul>\r\n           </ul>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1756653187507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,19 @@\n         </div>\r\n       </div>\r\n       <div>\r\n         <h2>Skills</h2>\r\n+        <div>\r\n+          <ul>\r\n+            <li>학력</li>\r\n+            <ul>\r\n+              <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n+            </ul>\r\n+          </ul>\r\n+        </div>\r\n       </div>\r\n+      <div>\r\n+        <h2>Skills</h2>\r\n+      </div>\r\n     </>\r\n   )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756653273465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,17 +29,18 @@\n       <div>\r\n         <h2>Skills</h2>\r\n         <div>\r\n           <ul>\r\n-            <li>학력</li>\r\n-            <ul>\r\n-              <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n-            </ul>\r\n+            <li>Java</li>\r\n+            <li>Spring Boot</li>\r\n+            <li>dJango</li>\r\n+            <li>Python</li>\r\n+            <li>React</li>\r\n+            <li>HTML</li>\r\n+            <li>CSS</li>\r\n+            <li>JavaScript</li>\r\n           </ul>\r\n         </div>\r\n       </div>\r\n-      <div>\r\n-        <h2>Skills</h2>\r\n-      </div>\r\n     </>\r\n   )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756653461501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,15 +30,19 @@\n         <h2>Skills</h2>\r\n         <div>\r\n           <ul>\r\n             <li>Java</li>\r\n-            <li>Spring Boot</li>\r\n-            <li>dJango</li>\r\n-            <li>Python</li>\r\n-            <li>React</li>\r\n             <li>HTML</li>\r\n             <li>CSS</li>\r\n             <li>JavaScript</li>\r\n+            <li>Python</li>\r\n+            <li>Dart</li>\r\n+            <li>Spring Boot</li>\r\n+            <li>React</li>\r\n+            <li>dJango</li>\r\n+            <li>Flutter</li>\r\n+            <li>BootStrap</li>\r\n+            <li>Tailwind</li>\r\n           </ul>\r\n         </div>\r\n       </div>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1756653562061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,20 +27,26 @@\n         </div>\r\n       </div>\r\n       <div>\r\n         <h2>Skills</h2>\r\n-        <div>\r\n+        <div className='flex gap-15'>\r\n           <ul>\r\n             <li>Java</li>\r\n+            <li>Python</li>\r\n+            <li>Dart</li>\r\n+          </ul>\r\n+          <ul>\r\n             <li>HTML</li>\r\n             <li>CSS</li>\r\n             <li>JavaScript</li>\r\n-            <li>Python</li>\r\n-            <li>Dart</li>\r\n+          </ul>\r\n+          <ul>\r\n             <li>Spring Boot</li>\r\n             <li>React</li>\r\n             <li>dJango</li>\r\n             <li>Flutter</li>\r\n+          </ul>\r\n+          <ul>\r\n             <li>BootStrap</li>\r\n             <li>Tailwind</li>\r\n           </ul>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1756653582789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n-      <div>\r\n+      <div className='flex '>\r\n         <h2>Profile</h2>\r\n         <div>\r\n           <ul>\r\n             <li>학력</li>\r\n"
+                },
+                {
+                    "date": 1756653590498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n-      <div className='flex '>\r\n+      <div className='flex flex-col gap-15'>\r\n         <h2>Profile</h2>\r\n         <div>\r\n           <ul>\r\n             <li>학력</li>\r\n"
+                },
+                {
+                    "date": 1756653614566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n-      <div className='flex flex-col gap-15'>\r\n+      <div>\r\n         <h2>Profile</h2>\r\n-        <div>\r\n+        <div className='flex flex-col gap-15'>\r\n           <ul>\r\n             <li>학력</li>\r\n             <ul>\r\n               <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n"
+                },
+                {
+                    "date": 1756653623117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         </div>\r\n       </div>\r\n       <div>\r\n         <h2>Profile</h2>\r\n-        <div className='flex flex-col gap-15'>\r\n+        <div className='flex gap-15'>\r\n           <ul>\r\n             <li>학력</li>\r\n             <ul>\r\n               <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n"
+                },
+                {
+                    "date": 1756653650969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n-      <div>\r\n+      <div className='flex justify-start'>\r\n         <h2>Profile</h2>\r\n         <div className='flex gap-15'>\r\n           <ul>\r\n             <li>학력</li>\r\n"
+                },
+                {
+                    "date": 1756653665353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         </div>\r\n       </div>\r\n       <div className='flex justify-start'>\r\n         <h2>Profile</h2>\r\n-        <div className='flex gap-15'>\r\n+        <div className='flex gap-15 justify-start items-start'>\r\n           <ul>\r\n             <li>학력</li>\r\n             <ul>\r\n               <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n"
+                },
+                {
+                    "date": 1756653671108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           <p>포기하지 않고</p>\r\n           <p>항상 성장을 위해 노력합니다.</p>\r\n         </div>\r\n       </div>\r\n-      <div className='flex justify-start'>\r\n+      <div>\r\n         <h2>Profile</h2>\r\n         <div className='flex gap-15 justify-start items-start'>\r\n           <ul>\r\n             <li>학력</li>\r\n"
+                },
+                {
+                    "date": 1756653700021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,58 @@\n+import React from 'react'\r\n+\r\n+export const FstMenu = () => {\r\n+  return(\r\n+    <>\r\n+      <h1>1thMenu</h1>\r\n+      <div>\r\n+        <div id='photo-container' className='flex gap-24'>\r\n+          <div>\r\n+            <img src=\"\" alt=\"이력서사진\" />\r\n+          </div>\r\n+          <div>\r\n+            <h1>개발자 신유식 입니다.</h1>\r\n+            <p>성실하게</p>\r\n+            <p>포기하지 않고</p>\r\n+            <p>항상 성장을 위해 노력합니다.</p>\r\n+          </div>\r\n+        </div>\r\n+        <div>\r\n+          <h2>Profile</h2>\r\n+          <div className='flex gap-15 justify-start items-start'>\r\n+            <ul>\r\n+              <li>학력</li>\r\n+              <ul>\r\n+                <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n+              </ul>\r\n+            </ul>\r\n+          </div>\r\n+        </div>\r\n+        <div>\r\n+          <h2>Skills</h2>\r\n+          <div className='flex gap-15'>\r\n+            <ul>\r\n+              <li>Java</li>\r\n+              <li>Python</li>\r\n+              <li>Dart</li>\r\n+            </ul>\r\n+            <ul>\r\n+              <li>HTML</li>\r\n+              <li>CSS</li>\r\n+              <li>JavaScript</li>\r\n+            </ul>\r\n+            <ul>\r\n+              <li>Spring Boot</li>\r\n+              <li>React</li>\r\n+              <li>dJango</li>\r\n+              <li>Flutter</li>\r\n+            </ul>\r\n+            <ul>\r\n+              <li>BootStrap</li>\r\n+              <li>Tailwind</li>\r\n+            </ul>\r\n+          </div>\r\n+        </div>\r\n+      </div>\r\n+    </>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756653710892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export const FstMenu = () => {\r\n   return(\r\n     <>\r\n       <h1>1thMenu</h1>\r\n-      <div>\r\n+      <div className='w-auto'>\r\n         <div id='photo-container' className='flex gap-24'>\r\n           <div>\r\n             <img src=\"\" alt=\"이력서사진\" />\r\n           </div>\r\n@@ -54,61 +54,5 @@\n         </div>\r\n       </div>\r\n     </>\r\n   )\r\n-}\n-import React from 'react'\r\n-\r\n-export const FstMenu = () => {\r\n-  return(\r\n-    <>\r\n-      <h1>1thMenu</h1>\r\n-      <div id='photo-container' className='flex gap-24'>\r\n-        <div>\r\n-          <img src=\"\" alt=\"이력서사진\" />\r\n-        </div>\r\n-        <div>\r\n-          <h1>개발자 신유식 입니다.</h1>\r\n-          <p>성실하게</p>\r\n-          <p>포기하지 않고</p>\r\n-          <p>항상 성장을 위해 노력합니다.</p>\r\n-        </div>\r\n-      </div>\r\n-      <div>\r\n-        <h2>Profile</h2>\r\n-        <div className='flex gap-15 justify-start items-start'>\r\n-          <ul>\r\n-            <li>학력</li>\r\n-            <ul>\r\n-              <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>\r\n-            </ul>\r\n-          </ul>\r\n-        </div>\r\n-      </div>\r\n-      <div>\r\n-        <h2>Skills</h2>\r\n-        <div className='flex gap-15'>\r\n-          <ul>\r\n-            <li>Java</li>\r\n-            <li>Python</li>\r\n-            <li>Dart</li>\r\n-          </ul>\r\n-          <ul>\r\n-            <li>HTML</li>\r\n-            <li>CSS</li>\r\n-            <li>JavaScript</li>\r\n-          </ul>\r\n-          <ul>\r\n-            <li>Spring Boot</li>\r\n-            <li>React</li>\r\n-            <li>dJango</li>\r\n-            <li>Flutter</li>\r\n-          </ul>\r\n-          <ul>\r\n-            <li>BootStrap</li>\r\n-            <li>Tailwind</li>\r\n-          </ul>\r\n-        </div>\r\n-      </div>\r\n-    </>\r\n-  )\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1756652703696,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nexport const FstMenu = () => {\r\n  return(\r\n    <>\r\n      <h1>1thMenu</h1>\r\n      <div>\r\n        <div>\r\n          <img src=\"\" alt=\"이력서사진\" />\r\n        </div>\r\n        <div>\r\n          <h1>한마디</h1>\r\n          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n          <p>안녕하세요. 프론트엔드 개발자 김민수입니다.</p>\r\n        </div>\r\n      </div>\r\n    </>\r\n  )\r\n}"
+        }
+    ]
+}

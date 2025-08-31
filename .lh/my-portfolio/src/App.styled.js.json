@@ -1,0 +1,26 @@
+{
+    "sourceFile": "my-portfolio/src/App.styled.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1756649778971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756650938883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+import styled from \"styled-components\";\n+\n+export const AllWrap = styled(\"div\")`\n+  width: 100vw;\n+  height: 100vh;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  padding: 10px;\n+  background-color: #032c19;\n+`;\n"
+                },
+                {
+                    "date": 1756650973968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,6 @@\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   padding: 10px;\n-  background-color: #032c19;\n+  background-color: #6effbb69;\n `;\n-import styled from \"styled-components\";\n-\n-export const AllWrap = styled(\"div\")`\n-  width: 100vw;\n-  height: 100vh;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-  padding: 10px;\n-  background-color: #444444;\n-`;\n"
+                }
+            ],
+            "date": 1756649778971,
+            "name": "Commit-0",
+            "content": "import styled from \"styled-components\";\n\nexport const AllWrap = styled(\"div\")`\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 10px;\n  background-color: #444444;\n`;\n"
+        }
+    ]
+}
