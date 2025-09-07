@@ -4,14 +4,15 @@ export const MenuContainer = styled("div")``;
 
 export const MenuTrigger = styled("div")`
   img {
-    border-radius: 25px;
+    border-radius: 50%;
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     cursor: pointer;
+    background-color: #a0a0a0c9;
   }
 `;
 
@@ -91,7 +92,7 @@ export const DropdownMenu = styled("div")`
   ul li {
     display: flex;
     margin: 10px auto;
-    
+
     //li 구분 얇은 선??????
     padding: 10px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -99,13 +100,13 @@ export const DropdownMenu = styled("div")`
     list-style: none;
     display: flex;
     align-items: center;
-    
-    
+
+
     &:hover a {
       color: rgb(212, 33, 9);
       cursor: pointer;
     }
-    
+
     &:hover img {
       opacity: 1;
       cursor: pointer;
@@ -117,7 +118,7 @@ export const DropdownMenu = styled("div")`
       opacity: 0.5;
       transition: var(--speed);
     }
-  
+
     a {
       max-width: 100px;
       margin-left: 15px;

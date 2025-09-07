@@ -45,12 +45,12 @@ export const NavbarLink = styled(NavLink)`
   }
 
   &:hover {
-    color: #855050;
+    color: #bba62e;
     text-decoration: 3px overline;
   }
 
   &.active {
-    color: rgb(219 90 109);
+    color: #968525;
     text-decoration: 2px underline;
     text-underline-position: under;
   }

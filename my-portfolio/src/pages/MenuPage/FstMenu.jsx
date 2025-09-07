@@ -1,58 +1,40 @@
 import React from 'react'
+import TypeIt from "typeit-react";
+import user from '../../assets/img/user.png';
+import { CircleUser, Github, Mail, ScrollText } from 'lucide-react';
+import * as Fst from "./FstMenu.styled.js";
+import { Link } from 'react-router-dom';
 
 export const FstMenu = () => {
   return(
-    <>
-      <h1>1thMenu</h1>
-      <div className='w-auto h-auto flex flex-col gap-10 text-lg'>
-        <div id='photo-container' className='flex gap-24'>
-          <div>
-            <img src="" alt="이력서사진" />
-          </div>
-          <div>
-            <h1>개발자 신유식 입니다.</h1>
-            <p>성실하게</p>
-            <p>포기하지 않고</p>
-            <p>항상 성장을 위해 노력합니다.</p>
-          </div>
-        </div>
+    <div className='relative w-[1480px] h-full top-[100px] flex flex-col justify-center items-center gap-3'>
+      <TypeIt as='div' className="h-[200px] text-center text-[#ffffff8f] text-4xl leading-relaxed"
+        options={{
+          speed: 50, // 타이핑 속도 (밀리초 단위, 기본값은 50~100 정도)
+          loop: true,
+        }}
+        getBeforeInit={(instance) => {
+          instance
+            .pause(20)
+            .type("안녕하세요.")
+            .break()
+            .type("프론트엔드를 희망하고 있는")
+            .break()
+            .type("개발자 신유식입니다.");
+          return instance;
+        }}
+      />
+      <div id='photo-container' className='bg-[#50505017] text-[#d4d4d479] w-[700px] h-[300px] rounded-4xl text-xl flex justify-center items-center gap-20 shadow-md'>
         <div>
-          <h2>Profile</h2>
-          <div className='flex gap-15 justify-start items-start'>
-            <ul>
-              <li>학력</li>
-              <ul>
-                <li>▶ 국립 공주대학교 산업시스템공학과 졸업 </li>
-              </ul>
-            </ul>
-          </div>
+          <img className='w-[130px] h-[150px]' src={user} alt="이력서사진" />
         </div>
-        <div>
-          <h2>Skills</h2>
-          <div className='flex gap-15'>
-            <ul>
-              <li>Java</li>
-              <li>Python</li>
-              <li>Dart</li>
-            </ul>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <ul>
-              <li>Spring Boot</li>
-              <li>React</li>
-              <li>dJango</li>
-              <li>Flutter</li>
-            </ul>
-            <ul>
-              <li>BootStrap</li>
-              <li>Tailwind</li>
-            </ul>
-          </div>
-        </div>
+        <Fst.IntroMenuUl>
+          <li><CircleUser className='text-[#464646]' /> 신유식</li>
+          <li className='underline'><Github className='text-[#464646]' /><a href="https://github.com/Yoosik-Shin">Github</a></li>
+          <li className='underline'><ScrollText className='text-[#464646]' /><a href="https://www.notion.so/26187255c04680e289cce0f6547e27b1?source=copy_link">Notion</a></li>
+          <li><Mail className='text-[#464646]' /><a href="mailto:snorlax234678@gmail.com">snorlax234678@gmail.com</a></li>
+        </Fst.IntroMenuUl>
       </div>
-    </>
+    </div>
   )
 }

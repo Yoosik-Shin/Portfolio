@@ -6,7 +6,7 @@ import { DropContainer } from "../Dropdown/DropContainer.jsx";
 export const Header = () => {
   return (
     <H.Header>
-    <DropContainer/>
+      <DropContainer/>
       <H.Nav>
         <H.NavLow>
           <H.NavbarLink to="/">Home</H.NavbarLink>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 40,
+            "activePatchIndex": 47,
             "patches": [
                 {
                     "date": 1756648884872,
@@ -168,6 +168,34 @@
                 {
                     "date": 1756649652183,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n             <h2>Countdown Timer</h2>\n             <p className=\"w-auto font-bold size-2.5\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n             <p className=\"w-auto font-bold size-2.5\">종강까지!</p>\n           </div>\n-          <div className=\"w-auto flex gap-3.5 font-bold text-4\">\n+          <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n             <section className=\"flex\">\n               <p>{timerDays}</p>\n               <p>\n                 <small>Days</small>\n"
+                },
+                {
+                    "date": 1757163699549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n     return () => clearInterval(interval.current);\n   }, []);\n \n     return (\n-      <section className=\"timer-container\">\n+      <section className=\"timer-container h-full\">\n         <section className=\"timer flex flex-col justify-center items-center gap-4\">\n           <div className=\"flex flex-col justify-center items-center\">\n             <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n           </div>\n"
+                },
+                {
+                    "date": 1757163721795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n   }, []);\n \n     return (\n       <section className=\"timer-container h-full\">\n-        <section className=\"timer flex flex-col justify-center items-center gap-4\">\n+        <section className=\"timer flex flex-col justify-center items-center gap-4 h-full\">\n           <div className=\"flex flex-col justify-center items-center\">\n             <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n           </div>\n           <div className=\"flex flex-col justify-center items-center text-center gap-7\">\n"
+                },
+                {
+                    "date": 1757163752103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n           <div className=\"flex flex-col justify-center items-center\">\n             <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n           </div>\n           <div className=\"flex flex-col justify-center items-center text-center gap-7\">\n-            <h2>Countdown Timer</h2>\n+            <p className=\"text-3xl\">Countdown Timer</p>\n             <p className=\"w-auto font-bold size-2.5\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n             <p className=\"w-auto font-bold size-2.5\">종강까지!</p>\n           </div>\n           <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n"
+                },
+                {
+                    "date": 1757163779352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,10 +48,10 @@\n             <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n           </div>\n           <div className=\"flex flex-col justify-center items-center text-center gap-7\">\n             <p className=\"text-3xl\">Countdown Timer</p>\n-            <p className=\"w-auto font-bold size-2.5\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n-            <p className=\"w-auto font-bold size-2.5\">종강까지!</p>\n+            <p className=\"w-auto font-bold text-2xl\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n+            <p className=\"w-auto font-bold text-2xl\">종강까지!</p>\n           </div>\n           <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n             <section className=\"flex\">\n               <p>{timerDays}</p>\n"
+                },
+                {
+                    "date": 1757163787680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n           <div className=\"flex flex-col justify-center items-center\">\n             <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n           </div>\n           <div className=\"flex flex-col justify-center items-center text-center gap-7\">\n-            <p className=\"text-3xl\">Countdown Timer</p>\n+            <p className=\"font-bold text-3xl\">Countdown Timer</p>\n             <p className=\"w-auto font-bold text-2xl\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n             <p className=\"w-auto font-bold text-2xl\">종강까지!</p>\n           </div>\n           <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n"
+                },
+                {
+                    "date": 1757163813303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,14 +44,14 @@\n     return (\n       <section className=\"timer-container h-full\">\n         <section className=\"timer flex flex-col justify-center items-center gap-4 h-full\">\n           <div className=\"flex flex-col justify-center items-center\">\n-            <Icon path={mdiCalendarClock} size={2} className=\"timer-icon\" />\n+            <Icon path={mdiCalendarClock} size={2} className=\"timer-icon text-amber-50\" />\n           </div>\n           <div className=\"flex flex-col justify-center items-center text-center gap-7\">\n-            <p className=\"font-bold text-3xl\">Countdown Timer</p>\n-            <p className=\"w-auto font-bold text-2xl\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n-            <p className=\"w-auto font-bold text-2xl\">종강까지!</p>\n+            <p className=\"font-bold text-3xl text-amber-50\">Countdown Timer</p>\n+            <p className=\"w-auto font-bold text-2xl text-amber-50\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n+            <p className=\"w-auto font-bold text-2xl text-amber-50\">종강까지!</p>\n           </div>\n           <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n             <section className=\"flex\">\n               <p>{timerDays}</p>\n"
+                },
+                {
+                    "date": 1757163822854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n             <p className=\"font-bold text-3xl text-amber-50\">Countdown Timer</p>\n             <p className=\"w-auto font-bold text-2xl text-amber-50\">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>\n             <p className=\"w-auto font-bold text-2xl text-amber-50\">종강까지!</p>\n           </div>\n-          <div className=\"w-auto flex gap-3.5 font-bold text-2xl\">\n+          <div className=\"w-auto flex gap-3.5 font-bold text-2xl text-amber-50\">\n             <section className=\"flex\">\n               <p>{timerDays}</p>\n               <p>\n                 <small>Days</small>\n"
                 }
             ],
             "date": 1756648884872,

@@ -3,6 +3,7 @@ import * as S from "./Login.styled";
 import { useNavigate } from "react-router-dom";
 import setCookie from "./setCookie";
 import LoginContextProvider, { LoginContext } from "./LoginContextProvider";
+import TypeIt from "typeit-react";
 
 export const Login = () => {
   const [errMsg, setErrMsg] = useState("");
@@ -34,7 +35,7 @@ export const Login = () => {
         // Cookies.set('loginState', true)
         setTimeout(() => {
           alert("로그인 하셨습니다.");
-          navigate("/header");
+          navigate("/header/about");
         }, 0);
       } else {
         alert('땡')
@@ -131,19 +132,40 @@ export const Login = () => {
   };
 
   return (
+    <div className="flex flex-col justify-center items-center">
     <S.LoginWrap>
       {/* <LoginContext.Provider> */}
-      <div className="title">😁환영합니다😁</div>
+      <TypeIt className="text-center"
+      options={{
+        speed: 20, // 타이핑 속도 (밀리초 단위, 기본값은 50~100 정도)
+      }}
+      getBeforeInit={(instance) => {
+        instance
+          .type("😁환영합니다😁")
+          .break()
+          .break()
+          .pause(30)
+          .type("아래 로그인 버튼을 바로 누르시면")
+          .break()
+          .break()
+          .pause(30)
+          .type("들어가실 수 있어요^^;")
+          .break();
+        return instance;
+      }}
+    />
       <div className="title-wrap flex justify-center items-center mb-3">
         <S.Title>{"아이디"}</S.Title>
-        <S.Input ref={refID} placeholder="ID"></S.Input>
+        <S.Input ref={refID} defaultValue="user" placeholder="ID"></S.Input>
       </div>
       <S.TitleWrap>
         <S.Title>{"비밀번호"}</S.Title>
-        <S.Input type="password" ref={refPW} placeholder="PW"></S.Input>
+        <S.Input type="password" ref={refPW} defaultValue="user" placeholder="PW"></S.Input>
       </S.TitleWrap>
       <S.Line />
-      <button className="btn btn-primary bg-[#333333a2] w-[98%] h-[40px] rounded-full hover:bg-[#49494988]" onClick={onBtn}>{"로그인"}</button>
+      <button className="btn btn-primary bg-[#333333a2] w-[98%] h-[40px] rounded-full hover:bg-[#49494988]
+                          active:scale-95 active:shadow-sm transition-transform duration-150"
+                          onClick={onBtn}>{"로그인"}</button>
       <S.Msg>{errMsg}</S.Msg>
       {/* </LoginContext.Provider> */}
       {/* <form className="loginSet" onSubmit={loginForm}> */}
@@ -161,5 +183,17 @@ export const Login = () => {
           <input type="submit" value="LOGIN" /> */}
       {/* </form> */}
     </S.LoginWrap>
+      <TypeIt className="absolute text-center bottom-0"
+      options={{
+        speed: 20, // 타이핑 속도 (밀리초 단위, 기본값은 50~100 정도)
+        loop: true,
+      }}
+      getBeforeInit={(instance) => {
+        instance
+          .type("번거롭게 해드려 죄송합니다..... 만들었는데 어디 놔둘데가 없어서 여기에 넣어놨어요...");
+        return instance;
+      }}
+    />
+    </div>
   );
 };

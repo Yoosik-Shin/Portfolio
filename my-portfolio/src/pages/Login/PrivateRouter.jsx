@@ -8,7 +8,7 @@ const PrivateRoutes = () => {
   const isLogin = Cookies.get('loginState')
 
   return isLogin ? <Outlet/> : <Navigate to='/login' replace/>
-  
+
 }
 
 export default PrivateRoutes

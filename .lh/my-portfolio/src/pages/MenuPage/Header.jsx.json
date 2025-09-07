@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1756561014369,
@@ -20,6 +20,10 @@
                 {
                     "date": 1756561749567,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n   return (\r\n     <H.Header>\r\n     <DropContainer/>\r\n       <H.Nav>\r\n-        {/* <H.NavLow>\r\n-          <H.NavbarLink to=\"/header/main-home\">Home</H.NavbarLink>\r\n-        </H.NavLow> */}\r\n         <H.NavLow>\r\n+          <H.NavbarLink to=\"/\">Home</H.NavbarLink>\r\n+        </H.NavLow>\r\n+        <H.NavLow>\r\n           <H.NavbarLink to=\"/header/about\">About Me</H.NavbarLink>\r\n         </H.NavLow>\r\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/header/snd-menu\">2ndMenu</H.NavbarLink>\r\n"
+                },
+                {
+                    "date": 1757155280097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n export const Header = () => {\r\n   return (\r\n     <H.Header>\r\n-    <DropContainer/>\r\n+      <DropContainer/>\r\n       <H.Nav>\r\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/\">Home</H.NavbarLink>\r\n         </H.NavLow>\r\n"
                 }
             ],
             "date": 1756561014369,

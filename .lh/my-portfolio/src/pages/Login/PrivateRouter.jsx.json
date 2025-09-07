@@ -1,0 +1,18 @@
+{
+    "sourceFile": "my-portfolio/src/pages/Login/PrivateRouter.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1757175453755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1757175453755,
+            "name": "Commit-0",
+            "content": "import Cookies from \"js-cookie\"\r\nimport { Navigate, Outlet } from \"react-router-dom\"\r\n\r\n\r\n\r\n\r\nconst PrivateRoutes = () => {\r\n  const isLogin = Cookies.get('loginState')\r\n\r\n  return isLogin ? <Outlet/> : <Navigate to='/login' replace/>\r\n\r\n}\r\n\r\nexport default PrivateRoutes"
+        }
+    ]
+}

@@ -42,17 +42,17 @@ import { mdiCalendarClock } from "@mdi/js";
   }, []);
 
     return (
-      <section className="timer-container">
-        <section className="timer flex flex-col justify-center items-center gap-4">
+      <section className="timer-container h-full">
+        <section className="timer flex flex-col justify-center items-center gap-4 h-full">
           <div className="flex flex-col justify-center items-center">
-            <Icon path={mdiCalendarClock} size={2} className="timer-icon" />
+            <Icon path={mdiCalendarClock} size={2} className="timer-icon text-amber-50" />
           </div>
           <div className="flex flex-col justify-center items-center text-center gap-7">
-            <h2>Countdown Timer</h2>
-            <p className="w-auto font-bold size-2.5">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>
-            <p className="w-auto font-bold size-2.5">종강까지!</p>
+            <p className="font-bold text-3xl text-amber-50">Countdown Timer</p>
+            <p className="w-auto font-bold text-2xl text-amber-50">AI활용 풀스택(프론트엔드,백엔드)부트캠프(자바,파이썬,플러터)</p>
+            <p className="w-auto font-bold text-2xl text-amber-50">종강까지!</p>
           </div>
-          <div className="w-auto flex gap-3.5 font-bold text-2xl">
+          <div className="w-auto flex gap-3.5 font-bold text-2xl text-amber-50">
             <section className="flex">
               <p>{timerDays}</p>
               <p>

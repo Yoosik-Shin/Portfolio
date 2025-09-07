@@ -10,7 +10,7 @@ export const LoginWrap = styled("div")`
   gap: 10px;
 
   width: 330px;
-  height: 300px;
+  height: 600px;
 
   padding: 20px;
   background-color: white;
@@ -20,6 +20,7 @@ export const LoginWrap = styled("div")`
   border-left: 1px solid;
   border-right: 3px solid;
   border-bottom: 3px solid;
+  box-shadow: 5px 5px 0px 0px #333333;
 `;
 
 export const TitleWrap = styled("div")`

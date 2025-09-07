@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1756561783739,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757154987529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   margin-left: 50px;\r\n `;\r\n \r\n export const Nav = styled(\"div\")`\r\n-  width: 80%;\r\n+  width: 100%;\r\n   height: 50px;\r\n   display: flex;\r\n   justify-content: space-around;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1757154999329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   margin-left: 50px;\r\n `;\r\n \r\n export const Nav = styled(\"div\")`\r\n-  width: 100%;\r\n+  width: 80%;\r\n   height: 50px;\r\n   display: flex;\r\n   justify-content: space-around;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1757172601421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     color: white;\r\n   }\r\n \r\n   &:hover {\r\n-    color: #855050;\r\n+    color: #bba62e;\r\n     text-decoration: 3px overline;\r\n   }\r\n \r\n   &.active {\r\n"
+                },
+                {
+                    "date": 1757172655293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     text-decoration: 3px overline;\r\n   }\r\n \r\n   &.active {\r\n-    color: rgb(219 90 109);\r\n+    color: #968525;\r\n     text-decoration: 2px underline;\r\n     text-underline-position: under;\r\n   }\r\n `;\r\n"
                 }
             ],
             "date": 1756561783739,
