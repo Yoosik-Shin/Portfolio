@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+    prefix: da;
+};
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}

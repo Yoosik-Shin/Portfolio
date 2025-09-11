@@ -1,0 +1,29 @@
+import React from 'react'
+import { motion } from 'framer-motion';
+import { FaReact } from 'react-icons/fa';
+import ProjectCard from './ProjectCard.jsx';
+
+export const TrdMenu = () => {
+  // const projects = [
+  //   {
+  //     title: "포트폴리오 웹사이트",
+  //     image: "/project1.png",
+  //     description: "React + Tailwind + Framer Motion을 활용하여 제작한 개인 포트폴리오 웹사이트입니다.",
+  //     stack: ["React", "Tailwind", "Framer Motion", "MUI"]
+  //   },
+  //   {
+  //     title: "쇼핑몰 프로젝트",
+  //     image: "/project2.png",
+  //     description: "Spring Boot와 React를 연동하여 구현한 쇼핑몰 프로젝트입니다.",
+  //     stack: ["Spring Boot", "React", "MySQL"]
+  //   }
+  // ];
+
+  return (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      {projects.map((project, idx) => (
+        <ProjectCard key={idx} {...project} />
+      ))}
+    </div>
+  );
+}
