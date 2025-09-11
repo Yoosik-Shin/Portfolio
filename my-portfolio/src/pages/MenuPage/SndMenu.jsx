@@ -24,10 +24,10 @@ export const SndMenu = () => {
     { name: "GitHub", icon: <VscGithub size={50} className="text-white" /> },
   ];
   const skills3 = [
-    { name: "Python", icon: <FaPython size={50} className="text-yellow-400" /> },
-    { name: "Django", icon: <SiDjango size={50} className="text-green-950" /> },
-    { name: "Flutter", icon: <SiFlutter size={50} className="text-blue-500" /> },
-    
+    { name: "Python", icon: <FaPython size={30} className="text-yellow-400" /> },
+    { name: "Django", icon: <SiDjango size={30} className="text-green-950" /> },
+    { name: "Flutter", icon: <SiFlutter size={30} className="text-blue-500" /> },
+
   ];
 
   return(
@@ -37,7 +37,7 @@ export const SndMenu = () => {
           src="https://lottie.host/1fb4ae0a-ff4c-4a2c-b348-cf8eb87c02a3/UH9uxfqNYm.lottie"
           loop
           autoplay
-          className='w-[800px] h-[400px]'
+          className='w-[700px] h-[350px]'
         />
 
         <div className="flex flex-wrap gap-10 justify-center mt-10">

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "my-portfolio/src/pages/MenuPage/FthMenu.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1757604649061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1757604671019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import ZootopiaReact from './ZootopiaReact'\r\n+import { motion } from \"framer-motion\";\r\n \r\n export const FthMenu = () => {\r\n   return(\r\n     <>\r\n"
+                }
+            ],
+            "date": 1757604649061,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\nimport ZootopiaReact from './ZootopiaReact'\r\n\r\nexport const FthMenu = () => {\r\n  return(\r\n    <>\r\n      {/* 콘텐츠 */}\r\n      <div className=\"relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4\">\r\n        <motion.h1\r\n          className=\"text-5xl md:text-7xl font-bold\"\r\n          initial={{ opacity: 0, y: 40 }}\r\n          animate={{ opacity: 1, y: 0 }}\r\n          transition={{ duration: 1 }}\r\n        >\r\n          Hi, I'm <span className=\"text-blue-400\">Your Name</span>\r\n        </motion.h1>\r\n\r\n        <motion.p\r\n          className=\"mt-4 text-lg md:text-2xl max-w-2xl\"\r\n          initial={{ opacity: 0 }}\r\n          animate={{ opacity: 1 }}\r\n          transition={{ delay: 0.5, duration: 1 }}\r\n        >\r\n          React | Spring Boot | TailwindCSS | JavaScript\r\n        </motion.p>\r\n\r\n        <motion.div\r\n          className=\"mt-8 flex gap-6\"\r\n          initial={{ opacity: 0, scale: 0.8 }}\r\n          animate={{ opacity: 1, scale: 1 }}\r\n          transition={{ delay: 1, duration: 0.8 }}\r\n        >\r\n          <a\r\n            href=\"#projects\"\r\n            className=\"px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition\"\r\n          >\r\n            View Projects\r\n          </a>\r\n          <a\r\n            href=\"#contact\"\r\n            className=\"px-6 py-3 bg-gray-700 hover:bg-gray-800 rounded-full shadow-md transition\"\r\n          >\r\n            Contact Me\r\n          </a>\r\n        </motion.div>\r\n      </div>\r\n    </>\r\n  )\r\n}"
+        }
+    ]
+}

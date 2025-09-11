@@ -26,7 +26,7 @@ function App() {
               <Route path="/header/about" element={<FstMenu />} />
               <Route path="/header/snd-menu" element={<SndMenu />} />
               <Route path="/header/trd-menu" element={<TrdMenu />} />
-              <Route path="/header/fth-menu" element={<FthMenu />} />
+              {/* <Route path="/header/fth-menu" element={<FthMenu />} /> */}
               <Route path="/header/timer-menu" element={<StartTimer />} />
             </Route>
           </Route>

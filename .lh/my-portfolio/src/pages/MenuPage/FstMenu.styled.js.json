@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1757164852417,
@@ -52,6 +52,30 @@
                 {
                     "date": 1757167413017,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n \r\n   li {\r\n     display: flex;\r\n     align-items: center;\r\n-    gap: 60px;\r\n+    gap: 20px;\r\n     color: #d4d4d479;\r\n   }\r\n `;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1757605179368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   flex-direction: column;\r\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n-  li {\r\n+  motion.li {\r\n     display: flex;\r\n     align-items: center;\r\n     gap: 20px;\r\n     color: #d4d4d479;\r\n"
+                },
+                {
+                    "date": 1757605187279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n   motion.li {\r\n-    display: flex;\r\n     align-items: center;\r\n     gap: 20px;\r\n     color: #d4d4d479;\r\n   }\r\n"
+                },
+                {
+                    "date": 1757605194076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import styled from \"styled-components\";\r\n \r\n export const IntroMenuUl = styled(\"ul\")`\r\n   display: flex;\r\n-  flex-direction: column;\r\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n   motion.li {\r\n"
+                },
+                {
+                    "date": 1757605201173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import styled from \"styled-components\";\r\n \r\n export const IntroMenuUl = styled(\"ul\")`\r\n   display: flex;\r\n+  flex-direction: column;\r\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n   motion.li {\r\n+    display: flex;\r\n     align-items: center;\r\n     gap: 20px;\r\n     color: #d4d4d479;\r\n   }\r\n"
+                },
+                {
+                    "date": 1757605258433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   flex-direction: column;\r\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n-  motion.li {\r\n+  li {\r\n     display: flex;\r\n     align-items: center;\r\n     gap: 20px;\r\n     color: #d4d4d479;\r\n"
+                },
+                {
+                    "date": 1757605267476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n   flex-direction: column;\r\n   align-items: flex-start;\r\n   gap: 10px;\r\n \r\n-  li {\r\n+  /* li {\r\n     display: flex;\r\n     align-items: center;\r\n     gap: 20px;\r\n     color: #d4d4d479;\r\n-  }\r\n+  } */\r\n `;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1757164852417,

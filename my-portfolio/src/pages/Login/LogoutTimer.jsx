@@ -48,7 +48,7 @@ export const LogoutTimer = () => {
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
+
       if (distance < 0) {
         clearInterval(interval)
         loggedOut.loggedOut()
@@ -98,7 +98,7 @@ export const LogoutTimer = () => {
 
 // if (timerHours === 0 && timerMinutes > 0 && timerSeconds > 0) {
 //   setTimerSeconds(timerSeconds - 1)
-// } 
+// }
 
 // if (timerHours > 0 && timerMinutes > 0 && timerSeconds > 0) {
 //   setTimerSeconds(timerSeconds - 1);

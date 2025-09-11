@@ -25,9 +25,9 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
           {Icon && <Icon size={20} className="text-blue-400" />}
           <h2 className="text-xl font-semibold text-white">{title}</h2>
         </div>
-        {openSections[id] ? <ChevronDown size={20} className="text-gray-400" /> : <ChevronRight size={20} className="text-gray-400" />}
+        {!openSections[id] ? <ChevronDown size={20} className="text-gray-400" /> : <ChevronRight size={20} className="text-gray-400" />}
       </button>
-      {openSections[id] && (
+      {!openSections[id] && (
         <div className="px-6 py-4 text-gray-300">
           {children}
         </div>
@@ -61,7 +61,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
             반려동물 커뮤니티 (ZOOTOPIA)
           </h1>
           <p className="text-xl opacity-90 mb-6">Spring Boot + Thymeleaf 기반 반려동물 종합 커뮤니티 플랫폼</p>
-          
+
           {/* Project Info Cards */}
           <div className="grid md:grid-cols-4 gap-4 mt-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -92,7 +92,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-6 py-12">
-        
+
         {/* Project Overview */}
         <CollapsibleSection title="프로젝트 목표 및 담당 역할" id="goals" icon={Award}>
           <div className="space-y-6">
@@ -100,7 +100,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
               <h3 className="text-lg font-semibold text-green-400 mb-3">💼 프로젝트 목표</h3>
               <p>Spring Boot, Thymeleaf 등을 이용해 사용자가 이해하기 쉬운 직관적인 UI, 자유게시판 등의 여러 기능들을 동물의 종류에 상관없이 모두 즐길 수 있는 커뮤니티</p>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold text-green-400 mb-3">📌 담당 기능</h3>
               <div className="space-y-2">
@@ -130,7 +130,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
                 <TechBadge tech="MyBatis" />
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold text-blue-400 mb-3">Frontend</h3>
               <div className="flex flex-wrap gap-2">
@@ -163,7 +163,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
                 <FeatureItem feature="반려동물 장례 정보" />
               </div>
             </div>
-            
+
             <div className="bg-gray-800 p-4 rounded-lg">
               <h3 className="font-semibold text-blue-400 mb-3">👥 사용자 기능</h3>
               <div className="space-y-2 text-sm">
@@ -196,7 +196,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
         <CollapsibleSection title="문제 해결 및 기술적 도전" id="problems" icon={Shield}>
           <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
             <h3 className="text-xl font-semibold text-blue-400 mb-4">✅ 소셜 로그인 구현</h3>
-            
+
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold text-yellow-400 mb-2">도전 동기</h4>
@@ -233,7 +233,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
                 <p>• 소셜로그인 (네이버)</p>
               </div>
             </div>
-            
+
             <div className="bg-gray-800 p-4 rounded-lg">
               <h3 className="font-semibold text-blue-400 mb-3">👨‍💻 이윤태</h3>
               <div className="space-y-1 text-sm">
@@ -268,7 +268,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
               <h3 className="font-semibold text-blue-400 mb-3">📋 프로젝트 관리</h3>
               <p>Notion을 사용하여 코드 및 여러 정보를 공유</p>
             </div>
-            
+
             <div className="bg-gray-800 p-4 rounded-lg">
               <h3 className="font-semibold text-green-400 mb-3">🗃️ 데이터베이스 설계</h3>
               <p>ERD-Cloud를 통한 데이터베이스 설계 및 공유</p>
@@ -310,7 +310,7 @@ const ZootopiaOrigin = ({ open, onClose, project }) => {
             {[
               "메인 페이지",
               "회원가입",
-              "로그인", 
+              "로그인",
               "추천 병원",
               "반려동물 장례정보",
               "소셜로그인 (네이버)",

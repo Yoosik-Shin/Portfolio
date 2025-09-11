@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Accordion from './Accordion'; // 기존 컴포넌트
+import { motion } from "framer-motion";
 
 function AccordionList() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -33,10 +34,10 @@ function AccordionList() {
               <li className='text-indigo-400'>원장, 수학강사</li>
               <li>- 수학 교과 수업</li>
               <li>- 시험 대비</li>
-              <li>- 개인 학습 관리</li>    
-              <li>- 학생 관리</li>    
-              <li>- 기타 교습소 운영 관련 비품 관리</li>    
-              
+              <li>- 개인 학습 관리</li>
+              <li>- 학생 관리</li>
+              <li>- 기타 교습소 운영 관련 비품 관리</li>
+
               <li className='text-[#777777]'>2024.03 ~ 2024.12</li>
             </ul>
           </table>
@@ -70,20 +71,27 @@ function AccordionList() {
   ];
 
   return (
-    <div className='flex lg:flex-row md:flex-col sm:flex-col gap-10 transition-all duration-300 ease-in-out'>
-      {accordionItems.map((item, i) => (
-        openIndex === null || openIndex === i ? (
-        <Accordion
-          key={i}
-          title={item.title}
-          open={openIndex === i}
-          onClick={() => setOpenIndex(openIndex === i ? null : i)}
-        >
+    // <div className='flex lg:flex-col md:flex-col sm:flex-col gap-10 transition-all duration-300 ease-in-out'>
+    <motion.div
+          className="flex lg:flex-col md:flex-col sm:flex-col gap-10 mt-8"
+          initial={{ opacity: 0, scale: 2 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 2.6, duration: 0.8 }}
+          >
+          {accordionItems.map((item, i) => (
+            <Accordion
+            key={i}
+            title={item.title}
+            open={openIndex === i}
+            onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            >
           {item.content}
         </Accordion>
-        ) : null
-      ))}
-    </div>
+        //   openIndex === null || openIndex === i ? (
+          // ) : null
+        ))}
+    </motion.div>
+    // </div>
   );
 }
 

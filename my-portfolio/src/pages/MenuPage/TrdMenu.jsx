@@ -10,6 +10,7 @@ import ZootopiaReact from './ZootopiaReact.jsx';
 import ZootopiaOrigin from './ZootopiaOrigin.jsx';
 import TheJoyfulDelivery from './TheJoyfulDelivery.jsx';
 import { Dialog } from '@mui/material';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const TrdMenu = () => {
   // const [open, setOpen] = useState(false);
@@ -20,6 +21,8 @@ export const TrdMenu = () => {
   //   setSelectedProject(project);
   //   setOpen(true);
   // };
+
+  const navigate = useNavigate();
 
   const handleOpen = (project) => {
     setSelectedProject(project);
@@ -81,7 +84,10 @@ export const TrdMenu = () => {
           <Dialog open={showFullPage} onClose={handleClose} fullWidth maxWidth={false}>
             <div className='relative max-h-[90vh] overflow-y-auto p-6'>
               <button onClick={handleClose} className="absolute top-4 right-4">닫기</button>
-              {pageType === 'zootopia_react' && <ZootopiaReact open={showFullPage} onClose={handleClose} project={selectedProject} />}
+              {/* {pageType === 'zootopia_react' && <ZootopiaReact open={showFullPage} onClose={handleClose} project={selectedProject} />}
+              {pageType === 'Zootopia' && <ZootopiaOrigin open={showFullPage} onClose={handleClose} project={selectedProject} />}
+              {pageType === 'The_Joyful_Delivery' && <TheJoyfulDelivery open={showFullPage} onClose={handleClose} project={selectedProject} />} */}
+              {pageType === 'zootopia_react' && <Link to="https://www.naver.com"><ZootopiaReact /></Link>}
               {pageType === 'Zootopia' && <ZootopiaOrigin open={showFullPage} onClose={handleClose} project={selectedProject} />}
               {pageType === 'The_Joyful_Delivery' && <TheJoyfulDelivery open={showFullPage} onClose={handleClose} project={selectedProject} />}
             </div>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1756561014369,
@@ -24,6 +24,18 @@
                 {
                     "date": 1757155280097,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n export const Header = () => {\r\n   return (\r\n     <H.Header>\r\n-    <DropContainer/>\r\n+      <DropContainer/>\r\n       <H.Nav>\r\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/\">Home</H.NavbarLink>\r\n         </H.NavLow>\r\n"
+                },
+                {
+                    "date": 1757601568539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,20 +14,20 @@\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/header/about\">About Me</H.NavbarLink>\r\n         </H.NavLow>\r\n         <H.NavLow>\r\n-          <H.NavbarLink to=\"/header/snd-menu\">2ndMenu</H.NavbarLink>\r\n+          <H.NavbarLink to=\"/header/snd-menu\">Skills</H.NavbarLink>\r\n         </H.NavLow>\r\n         <H.NavLow>\r\n-          <H.NavbarLink to=\"/header/trd-menu\">3rdMenu</H.NavbarLink>\r\n+          <H.NavbarLink to=\"/header/trd-menu\">Projects</H.NavbarLink>\r\n         </H.NavLow>\r\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/header/fth-menu\">4thMenu</H.NavbarLink>\r\n         </H.NavLow>\r\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/header/timer-menu\">Timer</H.NavbarLink>\r\n         </H.NavLow>\r\n       </H.Nav>\r\n-      <Outlet />\r\n+      <Outlet className=\"mb-10\"/>\r\n     </H.Header>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1757601578954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,8 @@\n         <H.NavLow>\r\n           <H.NavbarLink to=\"/header/timer-menu\">Timer</H.NavbarLink>\r\n         </H.NavLow>\r\n       </H.Nav>\r\n-      <Outlet className=\"mb-10\"/>\r\n+      <Outlet />\r\n     </H.Header>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1757606410692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import React from \"react\";\r\n+import { Outlet } from \"react-router-dom\";\r\n+import * as H from \"./Header.styled.js\";\r\n+import { DropContainer } from \"../Dropdown/DropContainer.jsx\";\r\n+\r\n+export const Header = () => {\r\n+  return (\r\n+    <H.Header>\r\n+      <DropContainer/>\r\n+      <H.Nav>\r\n+        <H.NavLow>\r\n+          <H.NavbarLink to=\"/\">Home</H.NavbarLink>\r\n+        </H.NavLow>\r\n+        <H.NavLow>\r\n+          <H.NavbarLink to=\"/header/about\">About Me</H.NavbarLink>\r\n+        </H.NavLow>\r\n+        <H.NavLow>\r\n+          <H.NavbarLink to=\"/header/snd-menu\">Skills</H.NavbarLink>\r\n+        </H.NavLow>\r\n+        <H.NavLow>\r\n+          <H.NavbarLink to=\"/header/trd-menu\">Projects</H.NavbarLink>\r\n+        </H.NavLow>\r\n+        {/* <H.NavLow>\r\n+          <H.NavbarLink to=\"/header/fth-menu\">4thMenu</H.NavbarLink>\r\n+        </H.NavLow> */}\r\n+        <H.NavLow>\r\n+          <H.NavbarLink to=\"/header/timer-menu\">Timer</H.NavbarLink>\r\n+        </H.NavLow>\r\n+      </H.Nav>\r\n+      <Outlet />\r\n+    </H.Header>\r\n+  );\r\n+};\r\n"
                 }
             ],
             "date": 1756561014369,

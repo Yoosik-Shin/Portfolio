@@ -11,8 +11,8 @@ console.log(day, hours, minutes, seconds)
 
 
 const currentTime = new Date().getTime();
-const threeHoursLater = new Date(currentTime + 3 * 60 * 60 * 1000);
-console.log(threeHoursLater)
+const expireTime = new Date(currentTime + 1 * 60 * 60 * 1000);
+console.log(expireTime)
 
 const localDate = new Date()
 const thrHoursLate = new Date(new Date().getHours() + 3)
@@ -25,12 +25,12 @@ console.log(thrHoursLate)
 
   const item = {
     value: value,
-    expireHours: threeHoursLater,
+    expireHours: expireTime,
   }
-  Cookies.set('user', value, {expires : threeHoursLater})
-  console.log(threeHoursLater)
+  Cookies.set('user', value, {expires : expireTime})
+  console.log(expireTime)
   Cookies.set('loginState', true)
-  localStorage.setItem('user', threeHoursLater)
+  localStorage.setItem('user', expireTime)
 }
 
 export default setCookie

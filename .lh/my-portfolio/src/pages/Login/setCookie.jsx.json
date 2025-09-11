@@ -1,0 +1,18 @@
+{
+    "sourceFile": "my-portfolio/src/pages/Login/setCookie.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1757602387545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1757602387545,
+            "name": "Commit-0",
+            "content": "import Cookies from 'js-cookie'\r\nimport { useEffect, useState } from 'react'\r\n\r\nconst setCookie = (value) => {\r\n  const date = new Date()\r\n  const day = date.getDate()\r\n  const hours = date.getHours()\r\n  const minutes = date.getMinutes()\r\n  const seconds = date.getSeconds()\r\nconsole.log(day, hours, minutes, seconds)\r\n\r\n\r\nconst currentTime = new Date().getTime();\r\nconst expireTime = new Date(currentTime + 3 * 60 * 60 * 1000);\r\nconsole.log(expireTime)\r\n\r\nconst localDate = new Date()\r\nconst thrHoursLate = new Date(new Date().getHours() + 3)\r\nconsole.log(thrHoursLate)\r\n\r\n\r\n  const expire = (new Date().getHours() + 3).toString()\r\n  console.log(expire)\r\n\r\n\r\n  const item = {\r\n    value: value,\r\n    expireHours: expireTime,\r\n  }\r\n  Cookies.set('user', value, {expires : expireTime})\r\n  console.log(expireTime)\r\n  Cookies.set('loginState', true)\r\n  localStorage.setItem('user', expireTime)\r\n}\r\n\r\nexport default setCookie\r\n\r\n\r\n\r\n// const [count, setCount] = useState()\r\n\r\n\r\n// useEffect(() => {\r\n//   count = expireTime - now.getHours\r\n//   const id = setInterval(() => {\r\n//     setCount(value => value - 1)\r\n//   }, 1000)\r\n\r\n//   return () => clearInterval(id)\r\n// },[])\r\n\r\n\r\n// useInterval(() => {\r\n//   setCount(count - 1)\r\n// }, 1000)"
+        }
+    ]
+}

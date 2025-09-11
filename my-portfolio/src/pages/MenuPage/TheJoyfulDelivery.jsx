@@ -25,9 +25,9 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
           {Icon && <Icon size={20} className="text-blue-400" />}
           <h2 className="text-xl font-semibold text-white">{title}</h2>
         </div>
-        {openSections[id] ? <ChevronDown size={20} className="text-gray-400" /> : <ChevronRight size={20} className="text-gray-400" />}
+        {!openSections[id] ? <ChevronDown size={20} className="text-gray-400" /> : <ChevronRight size={20} className="text-gray-400" />}
       </button>
-      {openSections[id] && (
+      {!openSections[id] && (
         <div className="px-6 py-4 text-gray-300">
           {children}
         </div>
@@ -61,7 +61,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
             택배 접수 및 조회 관리 시스템 (The Joyful Delivery)
           </h1>
           <p className="text-xl opacity-90 mb-6">Java Servlet + JSP 기반 택배 관리 시스템</p>
-          
+
           {/* Project Info Cards */}
           <div className="grid md:grid-cols-4 gap-4 mt-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -92,7 +92,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-6 py-12">
-        
+
         {/* Project Overview */}
         <CollapsibleSection title="프로젝트 목표 및 담당 역할" id="goals" icon={Award}>
           <div className="space-y-6">
@@ -100,7 +100,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
               <h3 className="text-lg font-semibold text-orange-400 mb-3">💼 프로젝트 목표</h3>
               <p>웹페이지를 통한 간편한 택배 접수 및 조회 시스템</p>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold text-orange-400 mb-3">📌 담당 기능</h3>
               <div className="space-y-2">
@@ -129,7 +129,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
                 <TechBadge tech="MySQL" />
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold text-blue-400 mb-3">Frontend</h3>
               <div className="flex flex-wrap gap-2">
@@ -143,7 +143,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
             <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4">
               <h3 className="text-yellow-400 font-semibold mb-2">🏗️ 아키텍처 특징</h3>
               <p className="text-gray-300 text-sm">
-                전통적인 MVC 패턴을 기반으로 한 서블릿-JSP 아키텍처를 사용하여 
+                전통적인 MVC 패턴을 기반으로 한 서블릿-JSP 아키텍처를 사용하여
                 웹 애플리케이션의 기본 구조를 학습하고 구현
               </p>
             </div>
@@ -161,7 +161,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
                 <FeatureItem feature="배송 현황 관리" />
               </div>
             </div>
-            
+
             <div className="bg-gray-800 p-4 rounded-lg">
               <h3 className="font-semibold text-blue-400 mb-3">👥 사용자 관리</h3>
               <div className="space-y-2 text-sm">
@@ -198,7 +198,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
               <h3 className="font-semibold text-blue-400 mb-3">📋 프로젝트 관리</h3>
               <p>Notion을 사용하여 코드 및 여러 정보를 공유</p>
             </div>
-            
+
             <div className="bg-gray-800 p-4 rounded-lg">
               <h3 className="font-semibold text-green-400 mb-3">🗃️ 데이터베이스 설계</h3>
               <p>ERD-Cloud를 통한 데이터베이스 설계 및 공유</p>
@@ -285,7 +285,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
         <CollapsibleSection title="프로젝트를 통한 성장" id="learning" icon={Award}>
           <div className="bg-gradient-to-r from-orange-900/20 to-red-900/20 border border-orange-500/30 rounded-lg p-6">
             <h3 className="text-xl font-semibold text-orange-400 mb-4">🚀 기술적 성장</h3>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-yellow-400 mb-2">✅ 달성한 것들</h4>
@@ -296,7 +296,7 @@ const TheJoyfulDelivery = ({ open, onClose, project }) => {
                   <p>• 팀 프로젝트 경험과 협업 도구 활용</p>
                 </div>
               </div>
-              
+
               <div>
                 <h4 className="font-semibold text-blue-400 mb-2">🎯 향후 개선 방향</h4>
                 <div className="space-y-1 text-sm">

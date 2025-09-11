@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1756559397439,
@@ -32,6 +32,10 @@
                 {
                     "date": 1756651304293,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n function App() {\n   // useContext(LoginContext)\n   return (\n     <BrowserRouter>\n-      {/* <S.AllWrap> */}\n+      <S.AllWrap>\n         <Routes>\n           <Route path=\"/\" element={<MainHome />} />\n           <Route path=\"/login\" element={<Login />} />\n           <Route element={<PrivateRoutes />}>\n@@ -30,9 +30,9 @@\n               <Route path=\"/header/timer-menu\" element={<StartTimer />} />\n             </Route>\n           </Route>\n         </Routes>\n-      {/* </S.AllWrap> */}\n+      </S.AllWrap>\n     </BrowserRouter>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1757606398574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <Route path=\"/header\" element={<Header />}>\n               <Route path=\"/header/about\" element={<FstMenu />} />\n               <Route path=\"/header/snd-menu\" element={<SndMenu />} />\n               <Route path=\"/header/trd-menu\" element={<TrdMenu />} />\n-              <Route path=\"/header/fth-menu\" element={<FthMenu />} />\n+              {/* <Route path=\"/header/fth-menu\" element={<FthMenu />} /> */}\n               <Route path=\"/header/timer-menu\" element={<StartTimer />} />\n             </Route>\n           </Route>\n         </Routes>\n"
                 }
             ],
             "date": 1756559397439,
