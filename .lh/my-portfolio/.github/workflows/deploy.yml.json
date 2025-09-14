@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1757858119032,
@@ -12,6 +12,10 @@
                 {
                     "date": 1757858244991,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,6 @@\n           server: ${{ secrets.FTP_SERVER }}\r\n           username: ${{ secrets.FTP_USERNAME }}\r\n           password: ${{ secrets.FTP_PASSWORD }}\r\n           local-dir: ./dist/               # Vite 빌드 결과물\r\n-          server-dir: /www/your_project/   # 카페24 서버 경로 (확인 필요)\r\n+          server-dir: /www/                # 카페24 서버 경로 (확인 필요)\r\n           dangerous-clean-slate: true      # 서버 폴더 싹 지우고 업로드 (선택)\r\n"
+                },
+                {
+                    "date": 1757858677336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,13 @@\n           node-version: 18\r\n \r\n       - name: Install dependencies\r\n         run: npm install\r\n+        working-directory: ./my-portfolio\r\n \r\n       - name: Build project\r\n         run: npm run build\r\n+        working-directory: ./my-portfolio\r\n \r\n       # React Router SPA를 위해 index.html을 404.html로 복사\r\n       - name: Handle React Router SPA\r\n         run: cp dist/index.html dist/404.html\r\n"
                 }
             ],
             "date": 1757858119032,

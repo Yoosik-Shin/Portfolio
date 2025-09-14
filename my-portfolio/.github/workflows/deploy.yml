@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./my-portfolio
 
       - name: Build project
         run: npm run build
+        working-directory: ./my-portfolio
 
       # React Router SPA를 위해 index.html을 404.html로 복사
       - name: Handle React Router SPA
