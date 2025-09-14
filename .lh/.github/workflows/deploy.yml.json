@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1757859092418,
@@ -32,6 +32,14 @@
                 {
                     "date": 1757860454799,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,5 @@\n           username: ${{ secrets.CAFE24_FTP_USERNAME }}\r\n           password: ${{ secrets.CAFE24_FTP_PASSWORD }}\r\n           local-dir: ./my-portfolio/dist/   # Vite 빌드 결과물\r\n           server-dir: /www/                # 카페24 서버 경로 (확인 필요)\r\n-          dangerous-clean-slate: true      # 서버 폴더 싹 지우고 업로드 (선택)\r\n+          dangerous-clean-slate: false      # 서버 폴더 싹 지우고 업로드 (선택)\r\n"
+                },
+                {
+                    "date": 1757860798186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n       - name: Setup Node.js\r\n         uses: actions/setup-node@v3\r\n         with:\r\n-          node-version: 18\r\n+          node-version: 20\r\n \r\n       - name: Install dependencies\r\n         run: npm install\r\n         working-directory: ./my-portfolio\r\n"
+                },
+                {
+                    "date": 1757860810879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,5 @@\n           username: ${{ secrets.CAFE24_FTP_USERNAME }}\r\n           password: ${{ secrets.CAFE24_FTP_PASSWORD }}\r\n           local-dir: ./my-portfolio/dist/   # Vite 빌드 결과물\r\n           server-dir: /www/                # 카페24 서버 경로 (확인 필요)\r\n-          dangerous-clean-slate: false      # 서버 폴더 싹 지우고 업로드 (선택)\r\n+          dangerous-clean-slate: true      # 서버 폴더 싹 지우고 업로드 (선택)\r\n"
                 }
             ],
             "date": 1757859092418,
