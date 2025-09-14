@@ -28,6 +28,7 @@ jobs:
 
       # React Router SPA를 위해 index.html을 404.html로 복사
       - name: Handle React Router SPA
+        working-directory: ./my-portfolio
         run: cp dist/index.html dist/404.html
 
       - name: Deploy to Cafe24 via FTP
@@ -36,6 +37,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/               # Vite 빌드 결과물
+          local-dir: ./my-portfolio/dist   # Vite 빌드 결과물
           server-dir: /www/                # 카페24 서버 경로 (확인 필요)
           dangerous-clean-slate: true      # 서버 폴더 싹 지우고 업로드 (선택)
