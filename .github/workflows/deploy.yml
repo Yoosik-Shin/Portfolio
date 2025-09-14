@@ -34,9 +34,9 @@ jobs:
       - name: Deploy to Cafe24 via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.CAFE24_FTP_SERVER }}
+          username: ${{ secrets.CAFE24_FTP_USERNAME }}
+          password: ${{ secrets.CAFE24_FTP_PASSWORD }}
           local-dir: ./my-portfolio/dist   # Vite 빌드 결과물
           server-dir: /www/                # 카페24 서버 경로 (확인 필요)
           dangerous-clean-slate: true      # 서버 폴더 싹 지우고 업로드 (선택)
