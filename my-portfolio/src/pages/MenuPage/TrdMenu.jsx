@@ -50,32 +50,38 @@ export const TrdMenu = () => {
 
   const projects = [
     {
-      title: "The_Joyful_Delivery",
-      image: main1,
-      description: "웹페이지를 통한 간편한 택배 접수 및 조회 시스템",
-      stack: ["Java", "Servlet", "JSP", "BootStrap"],
-      github: "https://github.com/skymin022/the_joyful_delivery"
+      title: "반려동물 커뮤니티 (zootopia_react)",
+      image: main3,
+      description: "반려동물 커뮤니티 프로젝트의 백엔드를 REST 방식으로 변경, 프론트엔드를 React로 변경 후 추가 기능 구현 ",
+      stack: ["React", "Spring Boot", "JWT", "Tailwind CSS"],
+      github: "https://github.com/jjwon55/zootopia_react",
+      notion: "https://www.notion.so/2-26187255c046805f8232f687b3c08097?source=copy_link",
+      linkLabel: "Notion에서 보기"
     },
     {
       title: "반려동물 커뮤니티 (Zootopia)",
       image: main2,
       description: "Spring Boot, Thymeleaf 등을 이용해 사용자가 이해하기 쉬운 직관적인 UI, 자유게시판 등의 여러 기능들을 동물의 종류에 상관없이 모두 즐길 수 있는 커뮤니티",
       stack: ["Thymeleaf", "Spring Boot", "Spring Security", "BootStrap"],
-      github: "https://github.com/Yoosik-Shin/AI3_TEAM_ZOOTOPIA"
+      github: "https://github.com/Yoosik-Shin/AI3_TEAM_ZOOTOPIA",
+      notion: "https://www.notion.so/1-26187255c04680a597b3e075d6a92f15?source=copy_link",
+      linkLabel: "Notion에서 보기"
     },
     {
-      title: "반려동물 커뮤니티 (zootopia_react)",
-      image: main3,
-      description: "반려동물 커뮤니티 프로젝트의 백엔드를 REST 방식으로 변경, 프론트엔드를 React로 변경 후 추가 기능 구현 ",
-      stack: ["React", "Spring Boot", "JWT", "Tailwind CSS"],
-      github: "https://github.com/jjwon55/zootopia_react"
-    }
+    title: "The_Joyful_Delivery",
+      image: main1,
+      description: "웹페이지를 통한 간편한 택배 접수 및 조회 시스템",
+      stack: ["Java", "Servlet", "JSP", "BootStrap"],
+      github: "https://github.com/skymin022/the_joyful_delivery",
+      notion: "https://www.notion.so/26287255c046801198a8e2b3a1766b7b?source=copy_link",
+      linkLabel: "Notion에서 보기"
+    },
   ];
 
   return (
     <>
       <div className='relative w-[1480px] h-full top-[100px] flex flex-col justify-center items-center gap-8 '>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
           {projects.map((project, idx) => (
             <ProjectCard key={idx} project={project} onOpen={handleOpen} />
           ))}
@@ -87,12 +93,11 @@ export const TrdMenu = () => {
               {/* {pageType === 'zootopia_react' && <ZootopiaReact open={showFullPage} onClose={handleClose} project={selectedProject} />}
               {pageType === 'Zootopia' && <ZootopiaOrigin open={showFullPage} onClose={handleClose} project={selectedProject} />}
               {pageType === 'The_Joyful_Delivery' && <TheJoyfulDelivery open={showFullPage} onClose={handleClose} project={selectedProject} />} */}
-              {pageType === 'zootopia_react' && <Link to="https://www.naver.com"><ZootopiaReact /></Link>}
+              {pageType === 'zootopia_react' && <ZootopiaReact open={showFullPage} onClose={handleClose} project={selectedProject} />}
               {pageType === 'Zootopia' && <ZootopiaOrigin open={showFullPage} onClose={handleClose} project={selectedProject} />}
               {pageType === 'The_Joyful_Delivery' && <TheJoyfulDelivery open={showFullPage} onClose={handleClose} project={selectedProject} />}
             </div>
           </Dialog>
-          <ZootopiaReact/>
 
           {/* <ZootopiaReact open={open} onClose={handleClose} project={selectedProject} />
           <ZootopiaOrigin open={open} onClose={handleClose} project={selectedProject} />
