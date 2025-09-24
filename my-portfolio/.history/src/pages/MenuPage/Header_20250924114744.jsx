@@ -17,13 +17,13 @@ export const Header = () => {
         <H.NavLow className="text-[#8d8d8d]">
           <H.NavbarLink to="/header/snd-menu">Skills</H.NavbarLink>
         </H.NavLow>
-        <H.NavLow className="text-[#8d8d8d]">
+        <H.NavLow>
           <H.NavbarLink to="/header/trd-menu">Projects</H.NavbarLink>
         </H.NavLow>
         {/* <H.NavLow>
           <H.NavbarLink to="/header/fth-menu">4thMenu</H.NavbarLink>
         </H.NavLow> */}
-        <H.NavLow className="text-[#8d8d8d]">
+        <H.NavLow>
           <H.NavbarLink to="/header/timer-menu">Timer</H.NavbarLink>
         </H.NavLow>
       </H.Nav>
